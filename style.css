@@ -5,25 +5,38 @@
 
 a {
     text-decoration: none;
+    color: #ffff;
+}
+.push1 {
+    font-family: Inter;
+    font-weight: 700;
+}
+.push2 a{
+    font-weight: 700;
+    text-decoration: none;
     color: #333333;
 }
 
-h1 {
+h1{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    flex: 1 0 0;
-    align-self: stretch;
+    
 
     font-family: 'Squada One';
     color: #FFF;
     text-align: center;
-    font-family: Squada One;
-    font-size: 8em;
+    font-size: 7rem;
     font-style: normal;
     font-weight: 400;
     line-height: 29.5%; /* 37.76px */
-    letter-spacing: 0.1em;
+    letter-spacing: 0.5rem;
+}
+h3{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #FFF; 
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
 }
 
 .MainBanner {
@@ -31,19 +44,38 @@ h1 {
     width: 100%;
     height: 795px;
 }
+
+header{
+    align-content: center;
+}
+
+.logo-container .logo {
+    color: #FFF;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    width: 193px;
+    height: 82.204px;
+    justify-content: center;
+    align-items: center;
+    gap: 7.784px;
+    flex-shrink: 0;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px 124px;
+}
+
 .mainNav{ 
     display: flex;
     list-style: none;
     margin: 0;
-    font-size: 0.7em;
-    justify-content: space-between;
-}
-
-.mainNav ul{ 
-    display: flex;
-    list-style: none;
-    margin: 0;
-    justify-content: space-between;
+    font-size: 0.7rem;
 }
 
 li {
@@ -60,7 +92,7 @@ li {
     gap: 8px;
     border-radius: 6px;
     border-color: none;
-    background: var(--neutrals-200, #EDF0F7);
+    background: var(--neutrals-200, #FFFF);
 }
 
 .textBanner {
@@ -68,13 +100,12 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: -50px;
+    gap: 0.625em;
+    padding: auto;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
 }
-/*.buttonLogin {
-    display: wrap;
-    align-items: flex-start;
-    gap: 32px;   
-}
+
 
 .logo {
     color: #FFF;
@@ -85,4 +116,40 @@ li {
     font-weight: 400;
     line-height: normal;
 
+}
+
+.container-search {
+    display: flex;
+    justify-content: center;
+}
+
+.search-box{
+    margin: 20px;
+    height: 1.5rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center; 
+}
+.search-box input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: small;  
+}
+
+.search-box button {
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: 0;
+}
+
+.IconStore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
