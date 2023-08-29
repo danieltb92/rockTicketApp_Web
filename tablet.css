@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .mainNav {
+        display: none;
+    }
+    .logo-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .icon-menu{
+        display: unset;
+    }
+    .section{
+        height: 100px;
+        /* padding-left: 1rem;
+        padding-right: 1rem; */
+    }
+    .section select{
+        margin: 0 auto;
+        width: 18rem;
+    }
+}
+

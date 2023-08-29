@@ -1,0 +1,25 @@
+@media (max-width :767px ) 
+
+{
+    .wrapper {
+        height: 12rem;
+        margin-top: 20px;
+        }
+    .MainBanner {
+        height: 600px;
+    }
+    .textBanner{
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+    }
+    .text-footer ul{
+                flex-direction: column;
+            }
+    .container-footer{
+            height: 400px;
+        }
+    .section select{
+        width: 10rem;
+    }
+}
+    

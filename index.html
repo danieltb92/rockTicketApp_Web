@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Squada+One&display=swap" rel="stylesheet">
@@ -17,6 +19,7 @@
             <nav class="navBar">
                 <div class="logo-container">
                     <img class="logo" src="images/RockTicket_Logo.png" alt="logo">
+                    <img class="icon-menu" width="24" height="24" src="https://img.icons8.com/ios-filled/50/FFFFFF/menu--v6.png" alt="menu--v6"/>
                 </div>
                 <ul class="mainNav">
                     <li><a class="push1" href="">Soporte</a></li>
@@ -25,36 +28,139 @@
             </nav>
         </header>
 
-        <div class="textBanner">
-            <h1 class="textTitle">RockTicket</h1><br>
-            <h3 class="textSubTitle">La App a tu entrada a los mejores conciertos de rock.</h3>
-        </div>
-
-        <div  class= "container-search">
-            <form class="search-box button">
-                <input type="text" placeholder="Busca alguna Banda de Rock">
-                <button type="submit"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1"></button>
-            </form>
-        </div>
-
-        <div class="IconStore">
-            <img src="images/1.png" alt="iconGoogle">
-            <img src="images/2.png" alt="iconApple">
+        <div class="container-banner">
+            <div class="textBanner">
+                <h1 class="textTitle">RockTicket</h1><br>
+                <h3 class="textSubTitle">La App a tu entrada a los mejores conciertos de rock.</h3>
+            </div>
+            <div  class= "container-search">
+                <form class="search-box button">
+                    <input type="text" placeholder="Busca alguna Banda de Rock">
+                    <button type="submit"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1"></button>
+                </form>
+            </div>
+            <div class="IconStore">
+                <a href="https://play.google.com/store/apps"><img src="images/1.png" alt="iconGoogle"></a>
+                <a href="https://apps.apple.com/co/app/apple-store/id375380948"><img src="images/2.png" alt="iconApple"></a>
+            </div>
         </div>
     </div>
     <section class="section">
-        <select name="transporte">
-
-            <option>Coche</option>
-            
-            <option>Avión</option>
-            
-            <option>Tren</option>
-            
+        <select class="section-select button" name="transporte">
+            <option value="value1" selected>Coche</option>       
+            <option value="value2">Avión</option>           
+            <option value="value3">Tren</option>            
         </select>
 
+        <select class="section-select button" name="transporte2">
+            <option value="value1" selected>Coche</option>       
+            <option value="value2">Avión</option>           
+            <option value="value3">Tren</option>            
+        </select>
     </section>
 
+    <div class="wrapper">
+        <div class="pagination-slider">
+            <input checked type=radio name="slider" id="slide1" />
+            <input type=radio name="slider" id="slide2" />
+            <input type=radio name="slider" id="slide3" />
+            <input type=radio name="slider" id="slide4" />
+            <input type=radio name="slider" id="slide5" />
+        </div>
+        <div class="slider-wrapper">
+            <div class=inner>
+    
+                <img class="img-show slider-body" id="imgSlider1" src="/images/c44d69b6cde4dd588e4af62933270091_XL.jpg" alt="#" />
+
+
+                <img class="img-hidden slider-body" id="imgSlider2" src="https://farm6.staticflickr.com/5812/23394215774_b76cd33a87_h_d.jpg" alt="#"/>
+
+
+                <img class="img-hidden slider-body" id="imgSlider3" src="https://farm8.staticflickr.com/7455/27879053992_ef3f41c4a0_h_d.jpg" alt="#"/>
+
+
+                <img class="img-hidden slider-body" id="imgSlider4" src="https://farm8.staticflickr.com/7367/27980898905_72d106e501_h_d.jpg" alt="#"/>
+
+
+                <img class="img-hidden slider-body" id="imgSlider5" src="https://farm8.staticflickr.com/7356/27980899895_9b6c394fec_h_d.jpg" alt="#"/>
+        
+            </div>
+            <!-- .inner -->
+        </div>
+        <!-- .slider-wrapper -->
+        
+        <div class="slider-prev-next-control">
+            <label for=slide1></label>
+            <label for=slide2></label>
+            <label for=slide3></label>
+            <label for=slide4></label>
+            <label for=slide5></label>
+        </div>
+        <!-- .slider-prev-next-control -->
+        
+        <div class="slider-dot-control">
+            <label for=slide1></label>
+            <label for=slide2></label>
+            <label for=slide3></label>
+            <label for=slide4></label>
+            <label for=slide5></label>
+        </div>
+        <!-- .slider-dot-control -->
+    </div>
+
+    <div class="main-title"><h2>Destacados</h2></div>
+    <div class="main-container">
+        <div class="card">
+            <div class="image-cover"></div>
+            <div class="text-card">Ghost</div>
+        </div>
+        <div class="card">
+            <div class="image-cover"></div>
+            <div class="text-card">Ghost</div>
+        </div>
+        <div class="card">
+            <div class="image-cover"></div>
+            <div class="text-card">Ghost</div>
+        </div>
+        <div class="card">
+            <div class="image-cover"></div>
+            <div class="text-card">Ghost</div>
+        </div>
+        <div class="card">
+            <div class="image-cover"></div>
+            <div class="text-card">Ghost</div>
+        </div>
+        <div class="card">
+            <div class="image-cover"></div>
+            <div class="text-card">Ghost</div>
+        </div>
+    </div>
+    
+
+    <footer >
+        <div class="container-footer">
+            <div class="socials-footer">
+                <ul>
+                    <li><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FFFFFF/facebook-circled--v1.png" alt="facebook-circled--v1"/></li>
+                    <li><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FFFFFF/twitterx.png" alt="twitterx"/></li>
+                    <li><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/></li>
+                    <li><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/FFFFFF/youtube-play--v1.png" alt="youtube-play--v1"/></li>
+                </ul>
+            </div>
+            <div class="text-footer">
+                <ul>
+                    <li></a>Ayuda</li>
+                    <li>Politica de privacidad</li>
+                    <li>Terminos y condiciones </li>
+                    <li>Contactanos</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>    
 </body>
+
+
 
 </html>

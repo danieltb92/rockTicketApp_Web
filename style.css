@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+html{
+    display: block;
+}
+body{
+    height: 100%;
+}
 
 a {
     text-decoration: none;
@@ -17,15 +23,13 @@ a {
     color: #333333;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    
 
+h1{
+    text-align: center;
     font-family: 'Squada One';
     color: #FFF;
     text-align: center;
-    font-size: 7rem;
+    font-size: 10vw;
     font-style: normal;
     font-weight: 400;
     line-height: 29.5%; /* 37.76px */
@@ -34,19 +38,33 @@ h1{
 h3{
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    color: #FFF; 
-    font-size: 1rem;
+    color: #FFF;
+    font-size: 1.5vw;
     letter-spacing: 0.05rem;
 }
 
 .MainBanner {
     background-image: url(images/unsplash_IW5Bm4rB9OA.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     width: 100%;
     height: 795px;
 }
 
 header{
     align-content: center;
+    width: 100%;
+}
+.container-banner{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    /* max-width: 1366px; */
+    width: 100%;
+
 }
 
 .logo-container .logo {
@@ -63,15 +81,17 @@ header{
     gap: 7.784px;
     flex-shrink: 0;
 }
-
+.icon-menu{
+    display: none;
+}
 .navBar {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 24px 124px;
+    padding: 8vh;
 }
 
-.mainNav{ 
+.mainNav{
     display: flex;
     list-style: none;
     margin: 0;
@@ -100,7 +120,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.625em;
+    gap: 0.625vw;
     padding: auto;
     margin-top: 12rem;
     margin-bottom: 2rem;
@@ -119,16 +139,19 @@ li {
 }
 
 .container-search {
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .search-box{
+    display: flex;
+    justify-content: center;
     margin: 20px;
     height: 1.5rem;
     width: 30rem;
-    display: flex;
-    justify-content: center; 
+    
 }
 .search-box input{
     flex: 1;
@@ -137,7 +160,7 @@ li {
     background: transparent;
     font-family: 'Inter';
     font-style: normal;
-    font-size: small;  
+    font-size: small;
 }
 
 .search-box button {
@@ -150,7 +173,239 @@ li {
 .IconStore{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    gap: 1rem;
+    align-content: center;
+    margin-top: 4rem;
+    gap: 10px;
+    width: 100%;
+    height: auto;
 }
+.IconStore img{
+    width: 25vh;
+    height: auto;
+}
+
+/******************************
+* Seccion seleccion
+*******************************/
+
+
+.section{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0rem;
+    border-top:1px solid #FFF;
+
+
+}
+.section select {
+    width: 20rem;
+    height: 40px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position: relative;
+}
+
+/******************************* 
+* Slider 
+********************************/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: grid;
+    grid-template-rows: 2;
+    justify-items: center;
+    align-items: center; */
+    height: 25rem;
+    width: auto;
+    /* background-color: rgb(50, 230, 27); */
+    overflow: hidden;
+    position: relative;
+}
+.slider-wrapper{
+    margin: 0 auto;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+    /* max-width: 1244px;; */
+    height: 350px;
+    position: relative;
+    /* margin-bottom: 1.5rem ; */
+    overflow:hidden;
+    
+}
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    margin:0px auto;
+    /* max-width: 1244px; */
+    position: relative;
+    
+    /* box-shadow:2px 5px 10px rgba(0,0,0,0.4);;
+    background-color: blueviolet; */
+    
+}    
+.inner img {
+    
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1244px;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 0;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+.pagination-slider {
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.img-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.img-show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+
+/**************************
+*  Main 
+***************************/
+
+.main-title{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 3rem;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 40px 0 40px 0;
+    border-top: 1px solid #333333;
+}
+
+.main-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-template-rows: auto;
+    padding: 20px 10% 50px 10%;
+    /* background-color: aqua; */
+    position: relative;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    /*display: flex;
+    flex-direction: column;
+    padding: 130px;
+    align-items: center;
+    gap: 50px;
+    flex-shrink: 0;
+    align-self: stretch; */
+    
+    /* margin: 20px; */
+    height: 373px;
+    border-radius: 10px;
+    /* background-color: #333333; */
+    overflow: hidden;
+
+}
+.image-cover{
+    background-image: url(https://webredhardnheavy.s3.eu-west-3.amazonaws.com/2022/04/Ghost-Impera-1000x350.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90%;
+    z-index: 0;
+   
+    
+}
+
+.text-card{
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 10%;
+    width: 100%;
+    background-color: #01fa92;
+    z-index: 1;
+}
+
+/*******************************
+* Fotter 
+*******************************/
+
+footer{
+    background-image: url(/images/unsplash_IW5Bm4rB9OA.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.container-footer{
+    height: 250px;
+    width: 100%;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+
+}.socials-footer , .text-footer{
+    
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.socials-footer , .text-footer{
+    position: relative;
+    bottom: -50px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+}
+.text-footer {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #FFF;
+    font-size: 0.8rem;                                                                                                                                                                                                                        ;
+}
+
+
+
+
+
+
+
+
+
+
