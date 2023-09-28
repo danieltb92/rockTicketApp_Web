@@ -1,7 +1,7 @@
 (function () {
-    const sliders = [...document.querySelectorAll (".slider-body")];
+    const sliders = [document.querySelectorAll (".slider-body")];
     console.log(sliders)
-    const selector = [...document.querySelectorAll (".pagination-slider input")];
+    const selector = [document.querySelectorAll (".pagination-slider input")];
     console.log (selector)
 
     selector.addEventListener("click", console.log("hola"));
@@ -13,5 +13,5 @@
     // }
     // console.log (currentElement)
     
-
+ 
 })()
