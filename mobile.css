@@ -1,16 +1,23 @@
-@media (max-width :767px ) 
+@media (max-width :425px ) 
 
 {
+    h2{
+        font-size: 1.2rem;
+    }
+    .container-banner .textSubTitle{
+        display: none;
+        padding: 3rem 0; 
+    }
+    .imageLanding{
+        display: none;
+    }
     .wrapper {
         height: 12rem;
         margin-top: 20px;
         }
-    .MainBanner {
-        height: 600px;
-    }
     .textBanner{
         margin-top: 6rem;
-        margin-bottom: 2rem;
+        margin-bottom: 6rem;
     }
     .text-footer ul{
                 flex-direction: column;
@@ -21,5 +28,27 @@
     .section select{
         width: 10rem;
     }
+    .slider-wrapper{
+        width: 100%;
+    }
+    .inner img{
+        border-radius: 0px;
+    }
+    .MainBanner{
+        padding: 0 2rem;
+    }
+    .section{   
+        padding: 0 1rem;
+    }
+    .container-hr2{
+        padding: 0 4rem;
+    }
+    .main-title h2{
+        margin-left: 4rem;
+    }
+    .search-box{
+        margin: 20px 1rem;
+    }
+
 }
     

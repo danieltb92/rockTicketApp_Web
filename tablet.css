@@ -1,18 +1,19 @@
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     h1{
-        font-size: 4rem;
+        font-size: 2.5rem;
         
     }
     h2{
         font-size: 0.7rem;
     }
-    /* hr{
-        max-width: 600px;
-        width: 100%;
-    } */
+    .textTitle2{
+        font-size: 3.7rem;
+    }
+    .MainBanner{
+        padding: 0 5rem 2rem;
+    }
     .navBar {
-        padding: 2.5rem 0rem 0rem;
-
+        padding: 2.5rem 0rem 2.5rem;
     }
     .mainNav {
         display: none;
@@ -45,6 +46,27 @@
         width: auto;
         height: 22rem;
     }
-    
+    .slider-wrapper{
+        width: 100%;
+    }
+    .inner img{
+        border-radius: 0px;
+    }
+    .section{   
+        padding: 0 8rem;
+    }
+    .container-hr2{
+        padding: 0 8rem;
+    }
+    .botones button img{
+        width: 25px;
+        height: auto;
+    }
+    .botones .siguiente{
+        right: 4%;
+    }
+    .botones .anterior{
+        left: 4%;
+    }
 }
 

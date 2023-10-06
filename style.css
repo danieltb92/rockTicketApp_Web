@@ -20,22 +20,35 @@ a {
 
 h1{
     font-family: 'Squada One';
-    color: #FFF;
-    font-size: 5rem;
+    color: #9494BC;
+    font-size: 3.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 29.5%; /* 37.76px */
     letter-spacing: 0.2rem;
-    text-shadow: 0px 1px 3px white;
+    /* text-shadow: 0px 1px 3px white; */
+}
+
+.textTitle2{
+    color: #FFFFFF;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 400; 
+    line-height: 90%; 
+    letter-spacing: 0rem;
+}
+
+.textTitle2 span{
+    color: #93C9C7;
 }
 
 
 h2{
     font-family: 'Inter', sans-serif;
-    font-style: normal;
+    font-style: medium;
     color: #FFF;
-    font-weight: 200;
-    font-size: 0.8rem;
+    font-weight: 500;
+    font-size: 1rem;
     letter-spacing: 0.03rem;
 }
 h3{
@@ -210,6 +223,9 @@ li {
     justify-content: start;
     margin: 0 0 20px ;
 }
+.container-banner .textSubTitle{
+    padding: 1rem 0;
+}
 
 .container-banner .IconStore{
     display: flex;
@@ -301,7 +317,7 @@ li {
 .botones button{
     border: none;
     background-color:rgba(0, 0, 0, 0);
-    z-index: 100;
+    /* z-index: 100; */
     position: absolute;
 
 }
